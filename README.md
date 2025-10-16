@@ -8,8 +8,8 @@ Projet full-stack de gestion de produits comprenant un **backend** en Spring Boo
 ## 🧱 Structure du projet
 
 gestion-produit/
-├── back/ # Backend - Spring Boot (Maven)
-└── front/ # Frontend - Angular (Node.js)
+|-- back/ # Backend - Spring Boot (Maven)
+|-- front/ # Frontend - Angular (Node.js)
 
 
 ---
@@ -19,8 +19,8 @@ gestion-produit/
 - ✅ CRUD Produits (Créer, Lire, Modifier, Supprimer)
 - ✅ Interface utilisateur moderne avec Angular
 - ✅ API REST sécurisée
-- ✅ Architecture modulaire
-- 🔄 Intégration facile avec une base de données relationnelle (MySQL)
+- ✅ Architecture standalone
+- 🔄 base de données relationnelle (MySQL)
 
 ---
 
