@@ -1,0 +1,25 @@
+<h2 mat-dialog-title class="flex items-center gap-2">
+  Edition d'un produit
+</h2>
+
+<mat-dialog-content>
+  <p>Nom</p>
+  <mat-form-field>
+    <mat-label>Noml</mat-label>
+    <input matInput [(ngModel)]="data.product.name" />
+  </mat-form-field>
+    <p>Description</p>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput [(ngModel)]="data.product.description" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button color="primary" (click)="onCancel()">
+    Annuler
+  </button>
+  <button mat-raised-button color="warn" (click)="onSave()">
+    Enregistrer
+  </button>
+</mat-dialog-actions>

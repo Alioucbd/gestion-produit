@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Ajouter un produit</h2>
+
+<mat-dialog-content [formGroup]="productForm" class="py-2 flex-col ">
+  <mat-form-field appearance="fill" class="w-full">
+    <mat-label>Nom du produit</mat-label>
+    <input matInput formControlName="name" placeholder="Nom du produit">
+    <mat-error *ngIf="productForm.get('name')?.hasError('required')">
+      Le nom est obligatoire
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="w-full mt-2">
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="description" placeholder="Description du produit"></textarea>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="mt-4">
+  <button mat-button (click)="onCancel()">Annuler</button>
+  <button mat-raised-button color="primary" [disabled]="productForm.invalid" (click)="onSave()">
+    Ajouter
+  </button>
+</mat-dialog-actions>
