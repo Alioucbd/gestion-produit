@@ -1,44 +1,53 @@
-# GestionProduit
+# 🛒 GestionProduit – Application Fullstack (Spring Boot + Angular)
 
+## 🚀 Description
+Application web fullstack permettant de gérer des produits via une API REST sécurisée et une interface utilisateur moderne.
 
-Projet full-stack de gestion de produits comprenant un **backend** en Spring Boot (Java, Maven) et un **frontend** en Angular.
+Ce projet illustre la conception d’une application complète avec séparation frontend/backend.
 
 ---
 
-## 🧱 Structure du projet
+## 🧱 Architecture
+
+- **Backend** : Spring Boot (Java, Maven)
+- **Frontend** : Angular
+- **Base de données** : MySQL
+
+---
 
 gestion-produit/
-|-- back/ # Backend - Spring Boot (Maven)
-|-- front/ # Frontend - Angular (Node.js)
+│── back/   # API Spring Boot
+│── front/  # Application Angular
 
+---
+## 🔐 Fonctionnalités
+
+- CRUD complet sur les produits
+- API REST sécurisée
+- Gestion des erreurs
+- Interface utilisateur responsive
+- Communication frontend/backend via HTTP
 
 ---
 
-## 🚀 Fonctionnalités
+## 🛠️ Stack technique
 
-- ✅ CRUD Produits (Créer, Lire, Modifier, Supprimer)
-- ✅ Interface utilisateur moderne avec Angular
-- ✅ API REST sécurisée
-- ✅ Architecture standalone
-- 🔄 base de données relationnelle (MySQL)
-
----
-
-## 📦 Technologies utilisées
-
-### Backend (Spring Boot)
-- Java 17 
-- Spring Boot (Web, Data JPA, etc.)
+### Backend
+- Java 17
+- Spring Boot (Web, Data JPA)
 - Maven
-- H2 / MySQL (selon config)
-- Spring Security (optionnel)
+- MySQL / H2
+- Spring Security
 
-### Frontend (Angular)
-- Angular CLI
+### Frontend
+- Angular
 - TypeScript
 - RxJS
-- Bootstrap
-- Angular Material
+- Angular Material / Bootstrap
+
+---
+### 📸 Aperçu
+
 
 ---
 
@@ -46,32 +55,26 @@ gestion-produit/
 
 ### ✅ Prérequis
 
-- Java 17 installé
-- Node.js 22.20.0 & npm 10.9.3 installés
-- Angular 20.3.0
-- Angular CLI (global) recommandé : `npm install -g @angular/cli`
+- Java 17
+- Node.js
+- Angular CLI
 
 
 ---
 
-### 1. Cloner le dépôt
-
-```bash
-git clone https://github.com/alioucbd/gestion-produit.git
-cd gestion-produit
-
-2. Lancer le Backend (Spring Boot)
+### Lancer le Backend
 cd back
-./mvnw clean install      # Compile et installe les dépendances
 ./mvnw spring-boot:run
 
-3. Lancer le Frontend (Angular)
+### Lancer le Frontend
 cd front
 npm install
 ng serve
 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.4.
+### 👨‍💻 Auteur
 
+Aliou Gueye
+Développeur Fullstack Java / Spring Boot / Angular
 
 
